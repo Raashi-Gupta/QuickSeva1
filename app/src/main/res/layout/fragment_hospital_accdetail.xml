@@ -33,7 +33,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/demail"
-           android:text="Driveer email"
+           android:text="Driver email"
            android:layout_below="@id/udname"
            android:textSize="15sp"/>
        <TextView
@@ -54,7 +54,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/uvno"
-           android:text="Driveer name"
+           android:text="Driver name"
            android:layout_below="@id/vno"
            android:textSize="20sp"/>
 
@@ -63,7 +63,8 @@
            android:layout_height="wrap_content"
            android:id="@+id/user_det"
            android:text="User Detail"
-           android:textSize="25sp"/>
+           android:textSize="25sp"
+           android:layout_below="@+id/uvno"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
