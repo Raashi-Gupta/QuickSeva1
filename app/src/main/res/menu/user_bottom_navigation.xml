@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"
+        />
+    <item android:title="Map"
+        android:icon="@drawable/baseline_place_24"
+        android:id="@+id/map"/>
+    <item android:title="Details"
+        android:icon="@drawable/baseline_upcoming_24"
+        android:id="@+id/details"/>
+    <item
+        android:title="First aid"
+        android:icon="@drawable/baseline_local_hospital_24"
+        android:id="@+id/first_aid"/>
+</menu>

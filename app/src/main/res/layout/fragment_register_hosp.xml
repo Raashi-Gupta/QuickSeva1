@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Registration"
+                android:textSize="30dp"
+                android:id="@+id/Registerh"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginVertical="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hospital's Name"
+                android:id="@+id/HName"
+                android:layout_below="@+id/Registerh"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HName"
+                android:id="@+id/hnamein"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:id="@+id/HCon"
+                android:layout_below="@+id/hnamein"
+                android:layout_marginHorizontal="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HCon"
+                android:id="@+id/hconin"
+                android:inputType="phone"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unique ID"
+                android:id="@+id/uid"
+                android:layout_below="@+id/hconin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uid"
+                android:id="@+id/uidin"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location/Address"
+                android:id="@+id/addh"
+                android:layout_below="@+id/uidin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addh"
+                android:id="@+id/addhin"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:id="@+id/lat"
+                android:layout_below="@+id/addhin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lat"
+                android:id="@+id/latin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude"
+                android:id="@+id/lon"
+                android:layout_below="@+id/latin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lon"
+                android:id="@+id/lonin"
+                android:layout_marginHorizontal="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of Hospital"
+                android:id="@+id/toh"
+                android:layout_below="@id/lonin"
+                android:layout_marginHorizontal="20dp"
+                />
+            <RadioGroup
+                android:id="@+id/radiogrph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toh"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/gbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="Government/Public"
+                    android:textColor="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/pbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private"
+                    android:textColor="@color/black"
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Healthcare Type"
+                android:layout_below="@id/radiogrph"
+                android:id="@+id/ht"
+                android:layout_marginHorizontal="20dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ht"
+                android:layout_marginHorizontal="20dp"
+                android:text="Hospital" />
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/checkBox1"
+                android:layout_below="@+id/ht"
+                android:text="Community Health Centre" />
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical College/Institute"
+                android:layout_below="@+id/checkBox1"
+                android:layout_marginHorizontal="20dp"/>
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primary Health Centre"
+                android:layout_toRightOf="@id/checkBox3"
+                android:layout_below="@+id/checkBox2"/>
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox3"
+                android:text="Others"
+                android:layout_marginHorizontal="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:id="@+id/email"
+                android:layout_below="@+id/checkBox5"
+                android:layout_marginHorizontal="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:id="@+id/emailin"
+                android:layout_marginHorizontal="20dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Password"
+                android:id="@+id/passh"
+                android:layout_below="@+id/emailin"
+                android:layout_marginHorizontal="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passh"
+                android:id="@+id/passhin"
+                android:password="true"
+                android:layout_marginHorizontal="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:id="@+id/passhc"
+                android:layout_below="@+id/passhin"
+                android:layout_marginHorizontal="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passhc"
+                android:id="@+id/passhcin"
+                android:password="true"
+                android:layout_marginHorizontal="20dp"
+                />
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passhcin"
+                android:text="Submit"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

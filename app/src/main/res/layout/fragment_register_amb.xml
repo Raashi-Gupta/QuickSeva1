@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_amb">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambulance Registration"
+        android:id="@+id/Register"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="15dp"/>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/DName"
+        android:layout_below="@+id/Register"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DName"
+        android:id="@+id/dnamein"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:id="@+id/DCon"
+        android:layout_below="@+id/dnamein"
+        android:layout_marginHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DCon"
+        android:id="@+id/dconin"
+        android:inputType="phone"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:id="@+id/userid"
+        android:layout_below="@+id/dconin"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userid"
+        android:id="@+id/userin"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="textEmailAddress"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Number"
+        android:id="@+id/VNum"
+        android:layout_below="@+id/userin"
+        android:layout_marginHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VNum"
+        android:id="@+id/vnumin"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Password"
+        android:id="@+id/pass"
+        android:layout_below="@+id/vnumin"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:id="@+id/passin"
+        android:password="true"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:id="@+id/passc"
+        android:layout_below="@+id/passin"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passc"
+        android:id="@+id/passcin"
+        android:password="true"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passcin"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Register" />
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_margin="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="50sp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:text="Email id"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:paddingTop="30dp"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailtext"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Email Id"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userid"
+        android:text="Password"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordtext"
+        android:hint="Password"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="138dp"
+        android:password="true"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="301dp">
+
+        <RadioButton
+            android:id="@+id/amb_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Ambulance"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/hos_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital"
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogrp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/red"
+        android:onClick="btnnext123"
+        android:text="Login"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+
+
+    <TextView
+        android:id="@+id/frgt_pswd"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_button"
+        android:pointerIcon="grab"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Forget Password??"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="519dp"
+        android:clickable="true"/>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/login"
+        android:title="Login"
+        />
+    <item
+        android:id="@+id/register"
+        android:icon="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:title="Register" />
+    <item
+        android:id="@+id/home2"
+        android:icon="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:title="Home" />
+</menu>
