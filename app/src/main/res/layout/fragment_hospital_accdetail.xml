@@ -5,10 +5,108 @@
     android:layout_height="match_parent"
     tools:context=".hospital_accdetail">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/amb_det"
+           android:text="Ambulance Detail"
+           android:textSize="25sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/dname"
+           android:text="Driveer name"
+           android:layout_below="@id/amb_det"
+           android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/udname"
+           android:text=""
+           android:layout_below="@id/dname"
+           android:textSize="20sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/demail"
+           android:text="Driveer email"
+           android:layout_below="@id/udname"
+           android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/udemail"
+           android:text=""
+           android:layout_below="@id/demail"
+           android:textSize="20sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/vno"
+           android:text="Vehicle number"
+           android:layout_below="@id/demail"
+           android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/uvno"
+           android:text="Driveer name"
+           android:layout_below="@id/vno"
+           android:textSize="20sp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/user_det"
+           android:text="User Detail"
+           android:textSize="25sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/uname"
+           android:text="User name"
+           android:layout_below="@id/user_det"
+           android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/uuname"
+           android:text=""
+           android:layout_below="@id/uname"
+           android:textSize="20sp"/>
+       <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/ucontact"
+       android:text="User Contact"
+       android:layout_below="@id/uuname"
+       android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/uucontact"
+           android:text=""
+           android:layout_below="@id/ucontact"
+           android:textSize="20sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/utoa"
+           android:text="Type ofAccident"
+           android:layout_below="@id/uucontact"
+           android:textSize="15sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/uutoa"
+           android:text=""
+           android:layout_below="@id/utoa"
+           android:textSize="20sp"/>
+
+   </RelativeLayout>
 
 </FrameLayout>
