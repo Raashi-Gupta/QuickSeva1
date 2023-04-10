@@ -10,9 +10,10 @@
         android:layout_height="match_parent"
         >
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/hospital"
+            android:layout_centerHorizontal="true"
             android:text="Home"
             android:textSize="20sp"/>
         <TextView
@@ -41,7 +42,6 @@
             android:id="@+id/email"
             android:text="Emailid : "
             android:layout_below="@+id/Aname"
-            android:layout_centerHorizontal="true"
             android:textSize="15sp"
             />
         <TextView
