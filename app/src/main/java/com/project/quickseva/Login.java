@@ -144,7 +144,9 @@ public class Login extends AppCompatActivity {
                 obj.setArguments(bundle);
                 Intent intent=new Intent(this, MainActivity_Ambulance.class);
 //                intent.putExtra("email",email);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+
 
             }
             else if(s == "Hospital")
@@ -156,7 +158,9 @@ public class Login extends AppCompatActivity {
                 obj.setArguments(bundle);
                 Intent intent =new Intent(this, MainActivity_Hospital.class);
 //                intent.putExtra("email",email);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+
 
             }
         }else {

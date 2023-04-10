@@ -33,7 +33,7 @@ public class ambulance_home extends Fragment {
         uvno=v.findViewById(R.id.uvno);
 //        email=getArguments().getString("email");
 
-        DocumentReference docRef = db.collection("Ambulance").document("hospital1@gmail.com");
+        DocumentReference docRef = db.collection("Ambulance").document("ambulance1@gmail.com");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>()
         {
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
