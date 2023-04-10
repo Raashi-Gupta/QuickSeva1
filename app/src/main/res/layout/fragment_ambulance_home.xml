@@ -9,6 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On dutty"
+
+            android:layout_below="@+id/hospital"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,7 +30,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/aname"
             android:text="Name"
-            android:layout_below="@+id/hospital"
+            android:layout_below="@+id/switch2"
             android:textSize="15sp"
             />
         <TextView
@@ -30,7 +39,7 @@
             android:id="@+id/Aname"
             android:layout_below="@+id/aname"
             android:text="  "
-            android:textSize="15sp"
+            android:textSize="20sp"
             />
 
 
