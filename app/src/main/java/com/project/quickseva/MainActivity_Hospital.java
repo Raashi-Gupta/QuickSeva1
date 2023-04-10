@@ -6,8 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
-import com.project.quickseva.databinding.ActivityMainBinding;
+
 import com.project.quickseva.databinding.ActivityMainHospitalBinding;
 
 public class MainActivity_Hospital extends AppCompatActivity {
@@ -20,18 +21,25 @@ public class MainActivity_Hospital extends AppCompatActivity {
         replaceFragment(new hospital_home());
         binding.bottomNavigationView3.setOnItemSelectedListener(item -> {
 
-            switch(item.getItemId())
+//            switch(item.getItemId())
+//            {
+//                case R.id.home1:
+//                    replaceFragment(new hospital_home());
+//                case R.id.map1:
+//                    replaceFragment(new hospital_map());
+//                case R.id.details1:
+//                    replaceFragment(new hospital_accdetail());
+//
+//
+//            }
+            if(item.getItemId()==R.id.home1)
             {
-                case R.id.home:
-                    replaceFragment(new hospital_home());
-                case R.id.map:
-                    replaceFragment(new hospital_map());
-                case R.id.details:
-                    replaceFragment(new hospital_accdetail());
-
-
+                replaceFragment(new hospital_home());
+            } else if (item.getItemId()==R.id.map1) {
+                replaceFragment(new hospital_map());
+            } else if (item.getItemId()==R.id.details1) {
+                replaceFragment(new hospital_accdetail());
             }
-
             return true;
         });
     }
@@ -39,7 +47,13 @@ public class MainActivity_Hospital extends AppCompatActivity {
     {
         FragmentManager fragmentmanager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentmanager.beginTransaction();
-        fragmentTransaction.replace(R.id.hospitalfragment,fragment);
+        fragmentTransaction.replace(R.id.hospitalfragment1,fragment);
         fragmentTransaction.commit();
+    }
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        Toast.makeText(this,"There is no back action",Toast.LENGTH_SHORT).show();
+        return;
     }
 }
