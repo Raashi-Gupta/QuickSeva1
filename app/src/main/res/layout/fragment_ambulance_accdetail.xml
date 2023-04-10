@@ -5,6 +5,108 @@
     android:layout_height="match_parent"
     tools:context=".ambulance_accdetail">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hos_det"
+            android:text="Hospital Detail"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hname"
+            android:text="Hospital name"
+            android:layout_below="@id/hos_det"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uhname"
+            android:text=""
+            android:layout_below="@id/hname"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hemail"
+            android:text="Hospital email"
+            android:layout_below="@id/uhname"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uhemail"
+            android:text=""
+            android:layout_below="@id/hemail"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="Address"
+            android:layout_below="@id/uhemail"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uadd"
+            android:text=""
+            android:layout_below="@id/add"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_det"
+            android:text="User Detail"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uname"
+            android:text="User name"
+            android:layout_below="@id/user_det"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uuname"
+            android:text=""
+            android:layout_below="@id/uname"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ucontact"
+            android:text="User Contact"
+            android:layout_below="@id/uuname"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uucontact"
+            android:text=""
+            android:layout_below="@id/ucontact"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/utoa"
+            android:text="Type ofAccident"
+            android:layout_below="@id/uucontact"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uutoa"
+            android:text=""
+            android:layout_below="@id/utoa"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
 
 </FrameLayout>
