@@ -6,9 +6,15 @@
     tools:context=".user_map">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--    <fragment-->
+<!--        android:id="@+id/map_fragment"-->
+<!--        android:name="com.tomtom.online.sdk.map.MapFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout="@layout/map_view"-->
+<!--        tomtom:mapsApiKey="maps.api.key"/ >-->
+    <com.tomtom.online.sdk.map.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>

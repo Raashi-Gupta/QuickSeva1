@@ -6,9 +6,123 @@
     tools:context=".user_accdetail">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amb_det"
+            android:text="Ambulance Detail"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dname"
+            android:text="Driver name"
+            android:layout_below="@id/amb_det"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/udname"
+            android:text=""
+            android:layout_below="@id/dname"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/demail"
+            android:text="Driveer email"
+            android:layout_below="@id/udname"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/udemail"
+            android:text=""
+            android:layout_below="@id/demail"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vno"
+            android:text="Vehicle number"
+            android:layout_below="@id/udemail"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uvno"
+            android:text=""
+            android:layout_below="@id/vno"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hos_det"
+            android:text="Hospital Detail"
+            android:textSize="25sp"
+            android:layout_below="@+id/uvno"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hname"
+            android:text="Hospital name"
+            android:layout_below="@id/hos_det"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uhname"
+            android:text=""
+            android:layout_below="@id/hname"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hemail"
+            android:text="Hospital email"
+            android:layout_below="@id/uhname"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uhemail"
+            android:text=""
+            android:layout_below="@id/hemail"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="Address"
+            android:layout_below="@id/uhemail"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uadd"
+            android:text=""
+            android:layout_below="@id/add"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/utoa"
+            android:text="Type ofAccident"
+            android:layout_below="@id/uadd"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uutoa"
+            android:text=""
+            android:layout_below="@id/utoa"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
 
 </FrameLayout>

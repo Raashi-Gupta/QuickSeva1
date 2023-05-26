@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+//import com.tomtom.online.sdk.map.MapView;
+//import com.tomtom.online.sdk.map.TomtomMap;
 public class user_map extends Fragment {
 
 
@@ -16,6 +17,7 @@ public class user_map extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_map, container, false);
+        View v=inflater.inflate(R.layout.fragment_user_map, container, false);
+        return  v;
     }
 }

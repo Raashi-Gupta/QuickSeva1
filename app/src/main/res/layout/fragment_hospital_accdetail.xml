@@ -10,16 +10,17 @@
        android:layout_height="match_parent">
 
        <TextView
-           android:layout_width="match_parent"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/amb_det"
            android:text="Ambulance Detail"
-           android:textSize="25sp"/>
+           android:textSize="25sp"
+           android:layout_centerHorizontal="true"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/dname"
-           android:text="Driveer name"
+           android:text="Driver name"
            android:layout_below="@id/amb_det"
            android:textSize="15sp"/>
        <TextView
@@ -28,7 +29,7 @@
            android:id="@+id/udname"
            android:text=""
            android:layout_below="@id/dname"
-           android:textSize="20sp"/>
+           android:textSize="16sp"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -54,11 +55,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/uvno"
-<<<<<<< HEAD
-           android:text="Driver name"
-=======
            android:text=""
->>>>>>> 41f887667288560072e40473e3071cff03283875
            android:layout_below="@id/vno"
            android:textSize="20sp"/>
 
@@ -69,7 +66,7 @@
            android:layout_below="@id/uvno"
            android:text="User Detail"
            android:textSize="25sp"
-           android:layout_below="@+id/uvno"/>
+           />
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"

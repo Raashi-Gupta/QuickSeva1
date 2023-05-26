@@ -24,17 +24,33 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(new user_home());
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            switch(item.getItemId())
+            if(item.getItemId()==R.id.home)
             {
-                case R.id.home:
-                    replaceFragment(new user_home());
-                case R.id.map:
-                    break;
-                case R.id.details:
-                    break;
-                case R.id.first_aid:
-                    replaceFragment(new user_firstaid());
+                replaceFragment(new user_home());
             }
+            else if (item.getItemId()==R.id.map)
+            {
+                replaceFragment(new user_map());
+            }
+            else if(item.getItemId()==R.id.details)
+            {
+                replaceFragment(new user_accdetail());
+            }
+            else if(item.getItemId()==R.id.details)
+            {
+                replaceFragment(new user_firstaid());
+            }
+//            switch(item.getItemId())
+//            {
+//                case R.id.home:
+//                    replaceFragment(new user_home());
+//                case R.id.map:
+//                    replaceFragment(new user_map());
+//                case R.id.details:
+//                    replaceFragment(new user_accdetail());
+//                case R.id.first_aid:
+//                    replaceFragment(new user_firstaid());
+//            }
 
             return true;
         });

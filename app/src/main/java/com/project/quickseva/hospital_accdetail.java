@@ -25,7 +25,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 public class hospital_accdetail extends Fragment {
 
     TextView udname,udemail,uvno,uuname,uucontact,uutoa;
-    FirebaseFirestore db;
+    FirebaseFirestore db,db1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class hospital_accdetail extends Fragment {
         uucontact=v.findViewById(R.id.uucontact);
         uutoa=v.findViewById(R.id.uutoa);
         db=FirebaseFirestore.getInstance();
-       db.collection("AccidentCases").whereEqualTo("hospital_email", "hospital1@gmail.com")
+       db.collection("AccidentCases").whereEqualTo("hospital_email", "hospital1@gmail.com").whereEqualTo("Status","Active")
                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                    @Override
                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -49,29 +49,32 @@ public class hospital_accdetail extends Fragment {
                                uuname.setText((CharSequence) document.get("Uname"));
 //                            uucontact.setText( document.get("Ucontact"));
                             uutoa.setText((CharSequence) document.get("toa"));
+                               db1=FirebaseFirestore.getInstance();
+                               db.collection("Ambulance").whereEqualTo("Email", "ambulance1@gmail.com")
+                                       .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                                           @Override
+                                           public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                               if (task.isSuccessful()) {
+                                                   for (QueryDocumentSnapshot document : task.getResult()) {
+//                                Log.d("R1", document.getId() + " => " + document.get("Name"));
+                                                       udname.setText((CharSequence) document.get("Name"));
+                                                       uvno.setText((CharSequence) document.get("Vehicle Number"));
+//                            uucontact.setText( document.get("Ucontact"));
+                                                       uutoa.setText((CharSequence) document.get("toa"));
+
+                                                   }
+                                               } else {
+                                                   Log.d("R2", "Error getting documents: ", task.getException());
+                                               }
+                                           }
+                                       });
                            }
                        } else {
                            Log.d("R2", "Error getting documents: ", task.getException());
                        }
                    }
                });
-        db.collection("Ambulance").whereEqualTo("Email", "ambulance1@gmail.com")
-                .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                Log.d("R1", document.getId() + " => " + document.get("Name"));
-                                udname.setText((CharSequence) document.get("Name"));
-                                uvno.setText((CharSequence) document.get("Vehicle Number"));
-//                            uucontact.setText( document.get("Ucontact"));
-                                uutoa.setText((CharSequence) document.get("toa"));
-                            }
-                        } else {
-                            Log.d("R2", "Error getting documents: ", task.getException());
-                        }
-                    }
-                });
+
 
 //        DocumentReference docRef = db.collection("AccidentCases").document();
 //        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>()

@@ -31,16 +31,15 @@ public class user_home extends Fragment {
     }
     FirebaseAuth auth ;
     FirebaseFirestore db ;
-    String name,s_contact,location,road__accident,fire_accident,others,s_stoa;
-    long contact;
+    String name="NA",s_contact,location,road__accident,fire_accident,others,s_stoa;
+    long contact=0;
     EditText uname,ucontact,ulocation;
     RadioGroup utoa;
     RadioButton aot_ra,aot_fa,uothers,stoa;
     TextView toa;
     Button button_notify;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_user_home, container, false);
         uname=v.findViewById(R.id.uname);
@@ -83,11 +82,16 @@ public class user_home extends Fragment {
                         @Override
                         public void onSuccess(Void aVoid) {
                             //Opem User Profile after successful Registeration
+                            Bundle bundle=new Bundle();
+                            bundle.putString("uname",name);
+                            bundle.putString("contact",s_contact);
+                            user_accdetail obj=new user_accdetail();
+                            obj.setArguments(bundle);
                             Toast.makeText(getActivity(),"Notified Successfully",Toast.LENGTH_LONG).show();
-//                            Intent intent=new Intent(getActivity(),Login.class);
+                            Intent intent=new Intent(getActivity(),user_accdetail.class);
 //                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                            startActivity(intent);
-//                            getActivity().finish();
+                            startActivity(intent);
+
 
                         }
                     });
